@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="name">111</div>
+    <img src="./pic1.webp" alt="">
+    <!-- <button onclick="sendMe()">click</button> -->
+    <script>
+//     let ws = new WebSocket('ws://localhost:3000')
+
+//     //開啟後執行的動作，指定一個 function 會在連結 WebSocket 後執行
+//     ws.onopen = () => {
+//     console.log('open connection')
+// }
+
+//     ws.onclose = () => {
+//         console.log('close connection')
+//     }
+
+//     //接收 Server 發送的訊息
+//     ws.onmessage = event => {
+//         console.log(event)
+//     }
+//     function sendMe(){
+//         ws.send('so do i')
+//     }
+
+// console.log(self.location)
+// var a=()=>{
+    //     console.log('its',this.age)
+    // }
+    // var A={
+        //     age:50
+        // }
+        // var age='outer'
+        // a.call(A)
+        // let promise = Notification.requestPermission();
+        // // var note=new Notification('i miss u')
+        // promise.then(e=>{
+            
+            // })
+    // var worker1=new Worker('./jsTry.js',{name:'zka'})
+    navigator.serviceWorker.register('./jsTry.js').then(e=>{
+        console.log(e)
+    })
+    </script>
+</body>
+</html>
