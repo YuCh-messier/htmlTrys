@@ -92,9 +92,9 @@ const cacheFirst = async ({ request, fallbackUrl }) => {
 self.addEventListener('install', (event) => {
     event.waitUntil(
       addResourcesToCache([
-        '/justCode/socket/pic1.webp',
-        '/justCode/socket/try.html',
-        '/justCode/socket/jsTry.js',
+        '/htmlTrys/pic1.webp',
+        '/htmlTrys/jsTry.js',
+        '/htmlTrys/try.html'
         ])
     );
 });
@@ -104,7 +104,7 @@ event.respondWith(
     cacheFirst({
     request: event.request,
     preloadResponsePromise: event.preloadResponse,
-    fallbackUrl: '/gallery/myLittleVader.jpg',
+    fallbackUrl: '/htmlTrys/pic1.webp',
     })
 );
 });
